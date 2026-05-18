@@ -22,9 +22,13 @@ Set ui[3:0] to select a board square from 0 to 8.
 The board positions are:
 
 0 | 1 | 2
+
 ---------
+
 3 | 4 | 5
+
 ---------
+
 6 | 7 | 8
 
 After selecting a square, pulse ui[4] high to submit the move. The first valid move places an X, the next valid move places an O, and the game continues alternating turns.
