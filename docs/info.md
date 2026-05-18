@@ -32,6 +32,7 @@ After selecting a square, pulse ui[4] high to submit the move. The first valid m
 Use ui[5] to reset the game. The reset clears the board, clears the win/draw status, and sets the next move back to X.
 
 The output pins can be checked as follows:
+```verilog
 uo[0] = hsync
 uo[1] = vsync
 uo[2] = red
@@ -40,8 +41,9 @@ uo[4] = blue
 uo[5] = X win indicator
 uo[6] = O win indicator
 uo[7] = draw indicator
-
+```
 The bidirectional pins are used as debug/status outputs:
+```verilog
 uio[0] = current turn
 uio[1] = game over
 uio[2] = valid square selected
@@ -50,7 +52,7 @@ uio[4] = synchronized submit signal
 uio[5] = X win debug
 uio[6] = O win debug
 uio[7] = draw debug
-
+```
 ## External hardware
 
 This project can be tested with switches or buttons for the inputs and LEDs or a logic analyzer for the status outputs.
