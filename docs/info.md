@@ -17,7 +17,7 @@ The design also generates video timing using the included hvsync_generator.v mod
 
 ## How to test
 
-Set ui[3:0] to select a board square from 0 to 8.
+Set `ui[3:0]` to select a board square from 0 to 8.
 
 The board positions are:
 ```
@@ -27,9 +27,9 @@ The board positions are:
 ---------
 6 | 7 | 8
 ```
-After selecting a square, pulse ui[4] high to submit the move. The first valid move places an X, the next valid move places an O, and the game continues alternating turns.
+After selecting a square, pulse `ui[4]` high to submit the move. The first valid move places an X, the next valid move places an O, and the game continues alternating turns.
 
-Use ui[5] to reset the game. The reset clears the board, clears the win/draw status, and sets the next move back to X.
+Use `ui[5]` to reset the game. The reset clears the board, clears the win/draw status, and sets the next move back to X.
 
 The output pins can be checked as follows:
 ```verilog
