@@ -18,7 +18,9 @@ The design also generates video timing using the included hvsync_generator.v mod
 ## How to test
 
 Set ui[3:0] to select a board square from 0 to 8.
+
 The board positions are:
+
 0 | 1 | 2
 ---------
 3 | 4 | 5
